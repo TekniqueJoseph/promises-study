@@ -45,6 +45,22 @@
 //     console.log(results[2])
 // }).catch(() => console.log('error'))
 
+const fetchStarWars = fetch('http://swapi.dev/api/people/2')
+    .then(resp => resp.json())
+    .then(console.log)
+
+const fetchPromise = fetch("http://swapi.dev/api/people/1");
+    fetchPromise.then(resp => resp.json())
+    .then(console.log);
+
+  
+
+
+// const fetchPromise = fetch("http://swapi.dev/api/people/1");
+//   fetchPromise.then(response => {
+//   console.log(response);
+// });
+
 // Solve the questions below:
 
 // #1) Create a promise that resolves in 4 seconds and returns "success" string
@@ -55,7 +71,7 @@
 
 // #2) Run the above promise and make it console.log "success"
 const quest1 = new Promise ((resolve, reject) => {
-    setTimeout(resolve, 4000, 'Got dem new Ckarks!!!')
+    setTimeout(resolve, 3000, 'Got dem new Clarks Sun!!!')
 })
 quest1.then(result => {
     console.log(result)
@@ -67,14 +83,14 @@ quest1.then(result => {
 const promise = Promise.resolve(
     setTimeout(() => {
       console.log("Suuuuuuu");
-    }, 5000)
+    }, 6000)
   );
 
 // #4) Catch this error and console log 'Ooops something went wrong'
 // Promise.reject('failed')
 
-const promised = Promise.reject('failed')
-.catch(console.log('Ooops something went wrong'))
+// const promised = Promise.reject('failed')
+// .catch(console.log('Ooops something went wrong'))
 
 // #5) Use Promise.all to fetch all of these people from Star Wars (SWAPI) at the same time.
 // Console.log the output and make sure it has a catch block as well.
