@@ -54,8 +54,6 @@ const fetchPromise = fetch("http://swapi.dev/api/people/1");
     .then(console.log);
 
   
-
-
 // const fetchPromise = fetch("http://swapi.dev/api/people/1");
 //   fetchPromise.then(response => {
 //   console.log(response);
