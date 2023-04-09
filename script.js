@@ -59,9 +59,9 @@
 //     console.log(results[2])
 // }).catch(() => console.log('error'))
 
-// const fetchStarWars = fetch('http://swapi.dev/api/people/2')
-//     .then(resp => resp.json())
-//     .then(console.log)
+fetch('http://swapi.dev/api/people/2')
+    .then(resp => resp.json())
+    .then(console.log)
 
 // const fetchPromise = fetch("http://swapi.dev/api/people/1");
 //     fetchPromise.then(resp => resp.json())
