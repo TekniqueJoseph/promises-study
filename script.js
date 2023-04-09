@@ -69,7 +69,7 @@ const fetchPromise = fetch("http://swapi.dev/api/people/1");
 
 // #2) Run the above promise and make it console.log "success"
 const quest1 = new Promise ((resolve, reject) => {
-    setTimeout(resolve, 3000, 'Got dem new Clarks Sun!!!')
+    setTimeout(resolve, 3000, 'Got dem new Clarks Sun!!')
 })
 quest1.then(result => {
     console.log(result)
