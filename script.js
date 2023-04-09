@@ -100,12 +100,12 @@
 //   );
 
 // #4) Catch this error and console log 'Ooops something went wrong'
-const promise3 = Promise.reject(('failed'),
-    setTimeout(() => {
-      throw Error
-      console.log("Suuuuuuu");
-    }, 6000)
-  ).catch(console.log('Ooops something went wrong'));
+// const promise3 = Promise.reject(('failed'),
+//     setTimeout(() => {
+//       throw Error
+//       console.log("Suuuuuuu");
+//     }, 6000)
+//   ).catch(console.log('Ooops something went wrong'));
 
 
 // #5) Use Promise.all to fetch all of these people from Star Wars (SWAPI) at the same time.
